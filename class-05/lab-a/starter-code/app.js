@@ -34,11 +34,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+  var multipliedResults = [];
+  multipliedResults[0] = a * b;
+  multipliedResults[1] = `The product of ${a} and ${b} is ${multipliedResults[0]}.`;
+  return multipliedResults;
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -54,12 +57,17 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+function sumAndMultiply(4, 7, 5) { //eslint-disable-line
+  var summedAndMultipliedResults = [];
+  summedAndMultipliedResults[0] = sum(4, 7, 5);
+  summedAndMultipliedResults[1] = multiply(4, 7, 5);
+  summedAndMultipliedResults[2] = `${4} and ${7} and ${5} sum to ${summedAndMultipliedResults[0]}.`;
+  summedAndMultipliedResults[3] = `The product of ${4} and ${7} and ${summedAndMultipliedResults[1]}.`;
+  return summedAndMultipliedResults;
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
