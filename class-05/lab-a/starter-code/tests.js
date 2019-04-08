@@ -20,7 +20,7 @@ function testMultiply() { //eslint-disable-line
 
 function testSumAndMultiply() { //eslint-disable-line
   // Gabriel - How does the code below factor together addition and multiplication
-  if (sumAndMultiply(4, 7, 5)[0] === 16 && sumAndMultiply(4, 7, 5)[1] === 140 && sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
+  if (sumAndMultiply(4, 7, 5)[0] === 16 && sumAndMultiply(4, 7, 5)[1] === 140 && sumAndMultiply(4, 7, 5)[2] === r && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
   // Gabriel - How does 
     console.log('%c TEST FOR sumAndMultiply() PASSES', 'color: green');
   } else {
