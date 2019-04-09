@@ -35,11 +35,11 @@ testSum(4, 7);
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
-  var multipliedResults = [];
-  multipliedResults[0] = a * b;
-  multipliedResults[1] = `The product of 5 and 9 is 45 + ${multipliedResults[0]}`;
-  return multipliedResults;
+function Multiply(a, b) { //eslint-disable-line
+  var resultMultiply = [];
+  resultMultiply[0] = a * b;
+  resultMultiply[1] = `The product of ${a} and ${b} is ${resultMultiply[0]}.`;
+  return resultMultiply;
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -61,13 +61,18 @@ testMultiply(5, 9);
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
+
+// Gabriel - Below I edited the code to match what we did in class. I got the first three right and initally did not finish due to being stuck. this was to understand how it worked.
 function sumAndMultiply(4, 7, 5) { //eslint-disable-line
-  var summedAndMultipliedResults = [];
-  summedAndMultipliedResults[0] = sum(4, 7, 5);
-  summedAndMultipliedResults[1] = multiply(4, 7, 5);
-  summedAndMultipliedResults[2] = "4 and 7 and 5 sum to 16" + summedAndMultipliedResults[0];
-  summedAndMultipliedResults[3] = "The product of 4 and 7 and 5 is 140" +  summedAndMultipliedResults[0] + summedAndMultipliedResults[1];
-  return summedAndMultipliedResults;
+var resultSumAndMulitply = []
+var tempValue1 = sum(a, b)[0];
+var newLocal = multiply(a, b)[0];
+
+  resultSumAndMultiply[] = sum(tempValue, c)[0];
+  resultSumAndMultiply[1] = multiply(newLocal, c)[0];
+  resultSumAndMultiply[2] = `${a} and ${b} and ${c} sum to ${resultsSumAndMultiply[1]}.`;
+  resultSumAndMultiply[3] = `The product ${a} of ${b} ${c} and and is ${resultSumAndMultiply[1]}.`;
+  return resultSumAndMultiply;
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -115,8 +120,12 @@ testSumArray(2, 3, 4);
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+var testArray = [2, 3, 4];
 
+function resultSumArray(sumArr) { //eslint-disable-line
+  var resultSumArray = [];
+  resultSumArray[0] = sum(sum(sumArr[0],sumArr[1], sumArr[2])[0];
+  resultSumArray [1] = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${resultSumArray[0]} is their sum.`
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
